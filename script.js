@@ -1,8 +1,8 @@
 /* Write your JavaScript code here!*/
 
-//const { myFetch } = require("./scriptHelper");
+const { myFetch } = require("./scriptHelper");
 
-//{ formSubmission } = require("./scriptHelper");
+{ formSubmission } = require("./scriptHelper");
 
 window.addEventListener("load", function () {
   let listedPlanets;
@@ -18,7 +18,6 @@ window.addEventListener("load", function () {
     let pickedPlanet = pickPlanet(listedPlanets);
     console.log(pickedPlanet)
     addDestinationInfo(document, pickedPlanet.name, pickedPlanet.diameter, pickedPlanet.star, pickedPlanet.distance, pickedPlanet.moons, pickedPlanet.image);
-
   });
 
   let form = document.querySelector("form");
